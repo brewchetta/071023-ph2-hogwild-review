@@ -12,6 +12,9 @@ const Nav = ({ filterGreased, setFilterGreased }) => {
 	// the handleClick sets filterGreased to "all" or "greased" depending on whether
 	// it's already "all" or not
 
+	// Best practice is to make the "handleClick" function name more specific
+	// We may have more than one click event so "handleClick" could be too generic
+
 	return (
 		<div className="navWrapper">
 			<span className="headerText">TrashPandaWild</span>
