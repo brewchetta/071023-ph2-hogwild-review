@@ -14,9 +14,6 @@ function App() {
 	// all OR greased
 	// ideally if state is on/off we would use a boolean (true/false)
 
-	// make extra emphasis on PROPS
-	// make notes about optimal solution / what Chett would do
-
 	return (
 		<div className="App">
 
