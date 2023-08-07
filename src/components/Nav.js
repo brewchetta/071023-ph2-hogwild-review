@@ -1,5 +1,4 @@
 import React from "react";
-import piggy from "../assets/porco.png";
 
 // The Nav component is declared with an arrow function
 // Ideally we would make this a normal function for consistency
