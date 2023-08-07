@@ -1,11 +1,16 @@
 import React from "react";
 import piggy from "../assets/porco.png";
 
+// The Nav component is declared with an arrow function
+// Ideally we would make this a normal function for consistency
 const Nav = ({ filterGreased, setFilterGreased }) => {
+	// PROPS: filterGreased, setFilterGreased
 
 	function handleClick() {
 		setFilterGreased( filterGreased === "all" ? "greased" : "all")
 	}
+	// the handleClick sets filterGreased to "all" or "greased" depending on whether
+	// it's already "all" or not
 
 	return (
 		<div className="navWrapper">
@@ -18,6 +23,8 @@ const Nav = ({ filterGreased, setFilterGreased }) => {
 			</span>
 
 			<button onClick={ handleClick }>{filterGreased === "greased" ? "Show All" : "Show Greased"}</button>
+			{/* button onClick: handleClick in order to change filterGreased */}
+			{/* the ternary in the button will show "Show All" or "Show Greased" depending on state */}
 
 		</div>
 	);
